@@ -22,11 +22,11 @@ class App extends React.Component {
   };
 
   onAdd = () => {
-    console.log("added");
     if (this.state.inputValue) {
       this.list.push(this.state.inputValue);
       this.setState({
-        todos: this.list
+        todos: this.list,
+        inputValue: null
       });
       document.getElementById("todo").value = null;
     }
