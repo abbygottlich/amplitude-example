@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.eab36ffc.chunk.css",
-    "main.js": "/static/js/main.f5ec6ca6.chunk.js",
-    "main.js.map": "/static/js/main.f5ec6ca6.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.2ae40d50.js",
-    "runtime-main.js.map": "/static/js/runtime-main.2ae40d50.js.map",
-    "static/js/2.f121e413.chunk.js": "/static/js/2.f121e413.chunk.js",
-    "static/js/2.f121e413.chunk.js.map": "/static/js/2.f121e413.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.1a23b37dce468e5fa6b9767bf5189c9e.js": "/precache-manifest.1a23b37dce468e5fa6b9767bf5189c9e.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.eab36ffc.chunk.css.map": "/static/css/main.eab36ffc.chunk.css.map",
-    "static/js/2.f121e413.chunk.js.LICENSE.txt": "/static/js/2.f121e413.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "/static/media/tick.7bd681c0.svg"
+    "main.css": "/amplitude-example/static/css/main.c9bdf21c.chunk.css",
+    "main.js": "/amplitude-example/static/js/main.dcee9404.chunk.js",
+    "main.js.map": "/amplitude-example/static/js/main.dcee9404.chunk.js.map",
+    "runtime-main.js": "/amplitude-example/static/js/runtime-main.01b0adad.js",
+    "runtime-main.js.map": "/amplitude-example/static/js/runtime-main.01b0adad.js.map",
+    "static/js/2.2627c200.chunk.js": "/amplitude-example/static/js/2.2627c200.chunk.js",
+    "static/js/2.2627c200.chunk.js.map": "/amplitude-example/static/js/2.2627c200.chunk.js.map",
+    "index.html": "/amplitude-example/index.html",
+    "precache-manifest.27aff487e563b3e67c24fb0098a12aa8.js": "/amplitude-example/precache-manifest.27aff487e563b3e67c24fb0098a12aa8.js",
+    "service-worker.js": "/amplitude-example/service-worker.js",
+    "static/css/main.c9bdf21c.chunk.css.map": "/amplitude-example/static/css/main.c9bdf21c.chunk.css.map",
+    "static/js/2.2627c200.chunk.js.LICENSE.txt": "/amplitude-example/static/js/2.2627c200.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/amplitude-example/static/media/tick.7bd681c0.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.2ae40d50.js",
-    "static/js/2.f121e413.chunk.js",
-    "static/css/main.eab36ffc.chunk.css",
-    "static/js/main.f5ec6ca6.chunk.js"
+    "static/js/runtime-main.01b0adad.js",
+    "static/js/2.2627c200.chunk.js",
+    "static/css/main.c9bdf21c.chunk.css",
+    "static/js/main.dcee9404.chunk.js"
   ]
 }
