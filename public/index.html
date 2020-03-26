@@ -144,16 +144,32 @@
       logEvent("view homepage");
 
       document.addEventListener("DOMContentLoaded", function() {
+        const input = document.getElementById("todo");
+        input.addEventListener("click", function() {
+          const addInput = new amplitude.Identify().set("add input", "1");
+          setUserProp(addInput);
+          logEvent("click input");
+        });
+
         const addBtn = document.getElementById("add-btn");
         addBtn.addEventListener("click", function() {
-          const clickedButton = new amplitude.Identify().set(
-            "clicked button",
-            "1"
-          );
-          setUserProp(clickedButton);
-          logEvent("click btn");
+          const addButton = new amplitude.Identify().set("add button", "1");
+          setUserProp(addButton);
+          logEvent("click add btn");
         });
       });
+
+      // document.addEventListener("DOMContentLoaded", function() {
+      //   const completeBtn = document.getElementById("complete-btn");
+      //   completeBtn.addEventListener("click", function() {
+      //     const completeButton = new amplitude.Identify().set(
+      //       "complete button",
+      //       "1"
+      //     );
+      //     setUserProp(completeButton);
+      //     logEvent("click complete btn");
+      //   });
+      // });
     </script>
   </head>
   <body>
@@ -169,6 +185,5 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <!-- test -->
   </body>
 </html>

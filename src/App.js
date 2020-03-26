@@ -68,6 +68,7 @@ class App extends React.Component {
             return (
               <div key={index} className="list-item-wrapper">
                 <button
+                  id="complete-btn"
                   onClick={() => {
                     this.onComplete(index);
                   }}
