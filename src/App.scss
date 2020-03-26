@@ -1,0 +1,101 @@
+body {
+  background-color: #fe5555;
+}
+
+h1 {
+  font-family: "Helvetica";
+  font-size: 48px;
+  font-weight: normal;
+  text-align: center;
+  color: #aa0000;
+}
+
+.input-add-wrapper {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+
+  input {
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 24px;
+    background-color: #ff8080;
+    border: none;
+    border-bottom: 2px solid #aa0000;
+    color: #aa0000;
+    font-family: "Helvetica";
+
+    &::placeholder {
+      color: #aa0000;
+      font-family: "Helvetica";
+    }
+  }
+
+  button {
+    width: 75px;
+    height: 48px;
+    border: none;
+    border-radius: 500px;
+    background-color: #aa0000;
+    color: #ff8080;
+    font-family: "Helvetica";
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: opacity 0.25s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
+}
+
+ul {
+  width: 25%;
+  margin: auto;
+  padding-left: 0;
+
+  .list-item-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    button {
+      width: 25px;
+      height: 25px;
+      margin-right: 10px;
+      padding: 15px;
+      background-image: url("./assets/tick.svg");
+      background-repeat: no-repeat;
+      background-size: 50%;
+      background-position: center;
+      background-color: #aa0000;
+      border: none;
+      border-radius: 50%;
+      transition: opacity 0.25s;
+
+      &:hover {
+        opacity: 0.5;
+      }
+
+      &:active {
+        opacity: 1;
+      }
+    }
+
+    li {
+      width: 100%;
+      height: fit-content;
+      list-style: none;
+      word-wrap: break-word;
+      color: #aa0000;
+      font-family: "Helvetica";
+      font-size: 24px;
+    }
+  }
+}
