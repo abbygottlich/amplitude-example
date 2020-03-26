@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/amplitude-example/static/css/main.c9bdf21c.chunk.css",
-    "main.js": "/amplitude-example/static/js/main.dcee9404.chunk.js",
-    "main.js.map": "/amplitude-example/static/js/main.dcee9404.chunk.js.map",
-    "runtime-main.js": "/amplitude-example/static/js/runtime-main.01b0adad.js",
-    "runtime-main.js.map": "/amplitude-example/static/js/runtime-main.01b0adad.js.map",
-    "static/js/2.2627c200.chunk.js": "/amplitude-example/static/js/2.2627c200.chunk.js",
-    "static/js/2.2627c200.chunk.js.map": "/amplitude-example/static/js/2.2627c200.chunk.js.map",
+    "main.css": "/amplitude-example/static/css/main.5b918c50.chunk.css",
+    "main.js": "/amplitude-example/static/js/main.255a787c.chunk.js",
+    "main.js.map": "/amplitude-example/static/js/main.255a787c.chunk.js.map",
+    "runtime-main.js": "/amplitude-example/static/js/runtime-main.999fab0e.js",
+    "runtime-main.js.map": "/amplitude-example/static/js/runtime-main.999fab0e.js.map",
+    "static/js/2.57bfb04c.chunk.js": "/amplitude-example/static/js/2.57bfb04c.chunk.js",
+    "static/js/2.57bfb04c.chunk.js.map": "/amplitude-example/static/js/2.57bfb04c.chunk.js.map",
     "index.html": "/amplitude-example/index.html",
-    "precache-manifest.27aff487e563b3e67c24fb0098a12aa8.js": "/amplitude-example/precache-manifest.27aff487e563b3e67c24fb0098a12aa8.js",
+    "precache-manifest.f63c4c189ad804a934f5c66f0b6c7e3e.js": "/amplitude-example/precache-manifest.f63c4c189ad804a934f5c66f0b6c7e3e.js",
     "service-worker.js": "/amplitude-example/service-worker.js",
-    "static/css/main.c9bdf21c.chunk.css.map": "/amplitude-example/static/css/main.c9bdf21c.chunk.css.map",
-    "static/js/2.2627c200.chunk.js.LICENSE.txt": "/amplitude-example/static/js/2.2627c200.chunk.js.LICENSE.txt",
+    "static/css/main.5b918c50.chunk.css.map": "/amplitude-example/static/css/main.5b918c50.chunk.css.map",
+    "static/js/2.57bfb04c.chunk.js.LICENSE.txt": "/amplitude-example/static/js/2.57bfb04c.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/amplitude-example/static/media/tick.7bd681c0.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.01b0adad.js",
-    "static/js/2.2627c200.chunk.js",
-    "static/css/main.c9bdf21c.chunk.css",
-    "static/js/main.dcee9404.chunk.js"
+    "static/js/runtime-main.999fab0e.js",
+    "static/js/2.57bfb04c.chunk.js",
+    "static/css/main.5b918c50.chunk.css",
+    "static/js/main.255a787c.chunk.js"
   ]
 }
