@@ -22,6 +22,7 @@ class App extends React.Component {
   };
 
   onAdd = () => {
+    console.log("added");
     if (this.state.inputValue) {
       this.list.push(this.state.inputValue);
       this.setState({
