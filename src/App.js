@@ -15,13 +15,40 @@ class App extends React.Component {
     this.list = [];
   }
 
+  componentDidMount() {
+    const eventProperties = {
+      type: "Page Load",
+      elementName: "Home Page",
+      elementId: 1
+    };
+
+    window.amplitude.getInstance().logEvent("view homepage", eventProperties);
+  }
+
   onChange = e => {
     this.setState({
       inputValue: e.target.value
     });
   };
 
+  onInputFocus = () => {
+    const eventProperties = {
+      type: "Element Change",
+      elementName: "Input Field",
+      elementId: 2
+    };
+
+    window.amplitude.getInstance().logEvent("add user input", eventProperties);
+  };
+
   onAdd = () => {
+    const eventProperties = {
+      type: "Element Click",
+      elementName: "Add Button",
+      elementId: 3,
+      userInput: this.state.inputValue
+    };
+    window.amplitude.getInstance().logEvent("click add btn", eventProperties);
     if (this.state.inputValue) {
       this.list.push(this.state.inputValue);
       this.setState({
@@ -55,6 +82,7 @@ class App extends React.Component {
         <h1>To Do List</h1>
         <div className="input-add-wrapper">
           <input
+            onClick={this.onInputFocus}
             onChange={this.onChange}
             id="todo"
             placeholder="To do..."

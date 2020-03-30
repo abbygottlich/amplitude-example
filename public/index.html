@@ -140,37 +140,6 @@
         amplitude.getInstance().identify(identifyObj);
       }
     </script>
-    <script>
-      logEvent("view homepage");
-
-      document.addEventListener("DOMContentLoaded", function() {
-        const input = document.getElementById("todo");
-        input.addEventListener("click", function() {
-          const addInput = new amplitude.Identify().set("add input", "1");
-          setUserProp(addInput);
-          logEvent("click input");
-        });
-
-        const addBtn = document.getElementById("add-btn");
-        addBtn.addEventListener("click", function() {
-          const addButton = new amplitude.Identify().set("add button", "1");
-          setUserProp(addButton);
-          logEvent("click add btn");
-        });
-      });
-
-      // document.addEventListener("DOMContentLoaded", function() {
-      //   const completeBtn = document.getElementById("complete-btn");
-      //   completeBtn.addEventListener("click", function() {
-      //     const completeButton = new amplitude.Identify().set(
-      //       "complete button",
-      //       "1"
-      //     );
-      //     setUserProp(completeButton);
-      //     logEvent("click complete btn");
-      //   });
-      // });
-    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
