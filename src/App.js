@@ -33,7 +33,7 @@ class App extends React.Component {
 
   onInputFocus = () => {
     const eventProperties = {
-      type: "Element Change",
+      type: "Element Click",
       elementName: "Input Field",
       elementId: 2
     };
@@ -48,7 +48,9 @@ class App extends React.Component {
       elementId: 3,
       userInput: this.state.inputValue
     };
+
     window.amplitude.getInstance().logEvent("click add btn", eventProperties);
+
     if (this.state.inputValue) {
       this.list.push(this.state.inputValue);
       this.setState({
@@ -65,7 +67,10 @@ class App extends React.Component {
       elementName: "Complete Button",
       elementId: 4
     };
-    window.amplitude.getInstance().logEvent("click add btn", eventProperties);
+
+    window.amplitude
+      .getInstance()
+      .logEvent("click complete btn", eventProperties);
 
     this.state.todos.splice(index, 1);
     this.setState({

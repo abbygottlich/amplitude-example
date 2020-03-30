@@ -123,7 +123,10 @@
         e.amplitude = n;
       })(window, document);
 
-      amplitude.getInstance().init("9fc259052c60c380c337517a6608cfa7");
+      amplitude.getInstance().init("9fc259052c60c380c337517a6608cfa7", null, {
+        includeUtm: true,
+        includeReferrer: true
+      });
     </script>
     <script>
       function logEvent(ampEventName, ampEventProp) {
