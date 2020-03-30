@@ -60,19 +60,12 @@ class App extends React.Component {
   };
 
   onComplete = index => {
-    const ampVar = window.amplitude;
-    // const setUserProp = window.setUserProp;
-    // const logEvent = window.logEvent;
-    // const completeBtn = document.getElementById("complete-btn");
-
-    // const eventProperties = {
-    //   type: "click complete btn"
-    // };
-    // ampVar.getInstance().logEvent(`click complete btn`, eventProperties);
-
-    // const completeButton = new ampVar.Identify().set("complete button", "1");
-    // ampVar.getInstance().setUserProp(completeButton);
-    ampVar.getInstance().logEvent("click complete btn");
+    const eventProperties = {
+      type: "Element Click",
+      elementName: "Complete Button",
+      elementId: 4
+    };
+    window.amplitude.getInstance().logEvent("click add btn", eventProperties);
 
     this.state.todos.splice(index, 1);
     this.setState({
