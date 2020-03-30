@@ -25,18 +25,18 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+
     <script type="text/javascript">
       (function(e, t) {
         var n = e.amplitude || { _q: [], _iq: {} };
         var r = t.createElement("script");
         r.type = "text/javascript";
-        r.integrity =
-          "sha384-3bSR/uIgD42pCWBeq1//B3mI/hPuWdk0L1EUnQIWfGyMOjs0VEoFLhHMqObtv2BA";
-        r.crossOrigin = "anonymous";
         r.async = true;
-        r.src = "https://cdn.amplitude.com/libs/amplitude-5.10.0-min.gz.js";
+        r.src = "https://cdn.amplitude.com/libs/amplitude-4.5.2-min.gz.js";
         r.onload = function() {
-          if (!e.amplitude.runQueuedFunctions) {
+          if (e.amplitude.runQueuedFunctions) {
+            e.amplitude.runQueuedFunctions();
+          } else {
             console.log("[Amplitude] Error: could not load SDK");
           }
         };
@@ -90,15 +90,12 @@
           "setVersionName",
           "setDomain",
           "setDeviceId",
-          "enableTracking",
           "setGlobalUserProperties",
           "identify",
           "clearUserProperties",
           "setGroup",
           "logRevenueV2",
           "regenerateDeviceId",
-          "groupIdentify",
-          "onInit",
           "logEventWithTimestamp",
           "logEventWithGroups",
           "setSessionId",
@@ -126,10 +123,7 @@
         e.amplitude = n;
       })(window, document);
 
-      amplitude.getInstance().init("1a881feb6db48ee201869c79c1b8fe71", null, {
-        includeUtm: true,
-        includeReferrer: true
-      });
+      amplitude.getInstance().init("1a881feb6db48ee201869c79c1b8fe71");
     </script>
     <script>
       function logEvent(ampEventName, ampEventProp) {
